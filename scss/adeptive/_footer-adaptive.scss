@@ -1,0 +1,26 @@
+@media screen and (max-width: 860px) {
+    .footer {
+        &_top {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+
+            &--card:nth-child(n+3) {
+margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer {
+        &_top {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+
+            &--card:nth-child(n+2) {
+                margin-top: 100px;
+                            }
+    }
+}
+}
